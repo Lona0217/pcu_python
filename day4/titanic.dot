@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Sex <= 0.5\ngini = 0.482\nsamples = 711\nvalue = [423, 288]\nclass = Unsurvived", fillcolor="#f7d7c0"] ;
+1 [label="Pclass <= 2.5\ngini = 0.372\nsamples = 259\nvalue = [64, 195]\nclass = Survived", fillcolor="#7abdee"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Age <= 2.5\ngini = 0.107\nsamples = 158\nvalue = [9, 149]\nclass = Survived", fillcolor="#45a3e7"] ;
+1 -> 2 ;
+3 [label="gini = 0.5\nsamples = 2\nvalue = [1, 1]\nclass = Unsurvived", fillcolor="#ffffff"] ;
+2 -> 3 ;
+4 [label="gini = 0.097\nsamples = 156\nvalue = [8, 148]\nclass = Survived", fillcolor="#44a2e6"] ;
+2 -> 4 ;
+5 [label="Fare <= 20.8\ngini = 0.496\nsamples = 101\nvalue = [55, 46]\nclass = Unsurvived", fillcolor="#fbeadf"] ;
+1 -> 5 ;
+6 [label="gini = 0.495\nsamples = 78\nvalue = [35, 43]\nclass = Survived", fillcolor="#daedfa"] ;
+5 -> 6 ;
+7 [label="gini = 0.227\nsamples = 23\nvalue = [20, 3]\nclass = Unsurvived", fillcolor="#e99457"] ;
+5 -> 7 ;
+8 [label="Age <= 6.5\ngini = 0.327\nsamples = 452\nvalue = [359, 93]\nclass = Unsurvived", fillcolor="#eca26c"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="SibSp <= 2.5\ngini = 0.444\nsamples = 24\nvalue = [8, 16]\nclass = Survived", fillcolor="#9ccef2"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 15\nvalue = [0, 15]\nclass = Survived", fillcolor="#399de5"] ;
+9 -> 10 ;
+11 [label="gini = 0.198\nsamples = 9\nvalue = [8, 1]\nclass = Unsurvived", fillcolor="#e89152"] ;
+9 -> 11 ;
+12 [label="Pclass <= 1.5\ngini = 0.295\nsamples = 428\nvalue = [351, 77]\nclass = Unsurvived", fillcolor="#eb9d64"] ;
+8 -> 12 ;
+13 [label="gini = 0.473\nsamples = 99\nvalue = [61, 38]\nclass = Unsurvived", fillcolor="#f5cfb4"] ;
+12 -> 13 ;
+14 [label="gini = 0.209\nsamples = 329\nvalue = [290, 39]\nclass = Unsurvived", fillcolor="#e89254"] ;
+12 -> 14 ;
+}
